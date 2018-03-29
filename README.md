@@ -1,5 +1,5 @@
 # Set up scripts
-
+Add these to `~/.bashrc` or `~/.zshrc`
 
 ## eslint
 ```bash
