@@ -147,12 +147,6 @@
         "SwitchCase": 1
       }
     ],
-    "key-spacing": [
-      "error",
-      {
-        "align": "value"
-      }
-    ],
     "keyword-spacing": [
       "error",
       {
