@@ -11,11 +11,8 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme" "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme"
 
-# nvm
-mkdir ~/.nvm
-curl https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-
 # Apply config
 curl https://raw.githubusercontent.com/posty72/config-scripts/master/zsh/zshrc > ~/.zshrc
 
 exec zsh
+
