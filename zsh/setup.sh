@@ -1,6 +1,6 @@
 # Install zsh
 apt-get update
-apt-get install -y zsh
+apt-get -y install zsh
 
 # Oh My ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
