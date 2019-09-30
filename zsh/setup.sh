@@ -16,3 +16,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 # Apply config
 curl https://raw.githubusercontent.com/posty72/config-scripts/master/zsh/zshrc > ~/.zshrc
+
+exec zsh
