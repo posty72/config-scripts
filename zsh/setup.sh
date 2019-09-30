@@ -1,4 +1,5 @@
 # Install zsh
+apt-get update
 apt-get install zsh
 
 # Oh My ZSH
