@@ -7,7 +7,7 @@ plugins=(
 	aws
 	git
 	zsh-autosuggestions
-    zsh-completions
+	zsh-completions
 	golang
 	dotenv
 	docker
@@ -19,7 +19,6 @@ plugins=(
 )
 
 autoload -U compinit && compinit
-
 
 source $ZSH/oh-my-zsh.sh
 
