@@ -23,14 +23,10 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
-# linters
-alias addeslint='curl -s https://raw.githubusercontent.com/posty72/config-scripts/master/.eslintrc > .eslintrc && npm i -D eslint babel-eslint eslint-plugin-babel eslint-plugin-react eslint-plugin-filenames eslint-plugin-import'
-alias addstylelint='curl -s https://raw.githubusercontent.com/posty72/config-scripts/master/.stylelintrc > .stylelintrc.json && npm i -D stylelint stylelint-order'
-alias addeditorconf='curl -s https://raw.githubusercontent.com/posty72/config-scripts/master/.editorconfig > .editorconfig'
-
 alias clean-npm="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 
 alias dc="docker-compose"
+alias k="kubernetes"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
