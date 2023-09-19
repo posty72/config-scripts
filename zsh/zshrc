@@ -5,19 +5,20 @@ export ZSH_CACHE_DIR=$HOME/.zsh
 ZSH_THEME="spaceship"
 
 plugins=(
-	aws
-	git
-	zsh-autosuggestions
-	zsh-completions
-	golang
-	dotenv
-	docker
-	docker-compose
-	npm
-	npx
-	nvm
-	python
+    aws
+    git
+    zsh-autosuggestions
+    zsh-completions
+    golang
+    dotenv
+    docker
+    docker-compose
+    npm
+    npx
+    nvm
+    python
     kubectl
+    kubectx
 )
 
 autoload -U compinit && compinit
