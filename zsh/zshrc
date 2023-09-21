@@ -31,6 +31,9 @@ alias clean-npm="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 alias dc="docker-compose"
 alias k="kubectl"
 
+alias python="python3"
+alias py="python3"
+alias py="python3"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
@@ -38,3 +41,30 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/sbin:$PATH"
 
 RPS1='$(kubectx_prompt_info)'
+
+function function_exists() {
+    declare -f -F $1 > /dev/null
+    return $?
+}
+
+function pyvenv {
+  if function_exists deactivate; then
+    deactivate
+  fi
+
+  python -m venv venv
+  source venv/bin/activate
+
+  echo "Created and activated python virtual environment."
+
+  if [ -f "requirements.txt" ]; then
+        echo "Found requirements.txt. Installing Python packages..."
+        pip install -r requirements.txt
+    fi
+
+    if [ -f "Pipfile.lock" ]; then
+        echo "Found Pipfile.lock. Installing Python packages..."
+        pipenv install --dev
+    fi
+}
+
