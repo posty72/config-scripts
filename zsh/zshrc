@@ -14,7 +14,6 @@ plugins=(
     docker
     docker-compose
     npm
-    npx
     nvm
     python
     kubectl
@@ -33,7 +32,9 @@ alias k="kubectl"
 
 alias python="python3"
 alias py="python3"
-alias py="python3"
+
+alias tf="terraform"
+alias tg="terragrunt"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
